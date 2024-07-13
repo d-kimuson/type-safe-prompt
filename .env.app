@@ -1,0 +1,2 @@
+ENVIRONMENT=local
+SAMPLE_APP=sample

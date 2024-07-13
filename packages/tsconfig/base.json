@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/strictest/tsconfig.json",
+  "display": "Default",
+  "compilerOptions": {
+    "composite": false,
+    "incremental": true,
+    "allowJs": true,
+    "checkJs": true,
+    "resolveJsonModule": true,
+
+    // linter 責務のルールを無効化
+    "noImplicitReturns": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": false,
+
+    // pnpm や workspace の symlink で壊れないように
+    "preserveSymlinks": true
+  },
+  "exclude": ["node_modules"]
+}

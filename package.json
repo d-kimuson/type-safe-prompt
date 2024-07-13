@@ -1,0 +1,45 @@
+{
+  "name": "type-safe-prompt",
+  "description": "FIXME",
+  "private": true,
+  "version": "0.0.1",
+  "author": "d-kimuson",
+  "main": "dist/index.js",
+  "packageManager": "pnpm@9.5.0",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "fix": "pnpm /^fix:.*/",
+    "fix:prettier": "pnpm run:prettier . --write",
+    "fix:turbo": "turbo run fix",
+    "fix:package-json": "syncpack format",
+    "fixAll:cspell": "node ./scripts/update_cspell_words.mjs",
+    "lint": "pnpm /^lint:.*/",
+    "lint:cspell": "cspell lint './**/*.{tsx,ts,mts,mcs,mjs,cjs,js,json,md,yml,yaml}' --gitignore --cache",
+    "lint:prettier": "pnpm run:prettier . --check",
+    "lint:turbo": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "generate:env": "op inject --in-file .env.secret.template --out-file .env.secret --force",
+    "preinstall": "pnpm /^setup:.*/",
+    "run:prettier": "prettier --ignore-unknown --no-error-on-unmatched-pattern --cache",
+    "setup:check-manager": "npx -y only-allow pnpm"
+  },
+  "devDependencies": {
+    "@actions/github": "6.0.0",
+    "@octokit/rest": "20.0.2",
+    "cspell": "7.3.9",
+    "lefthook": "1.6.7",
+    "prettier": "3.2.5",
+    "syncpack": "11.2.1",
+    "turbo": "^2.0.6"
+  },
+  "engines": {
+    "npm": "forbidden, use pnpm",
+    "yarn": "forbidden, use pnpm",
+    "pnpm": ">=9.5.0",
+    "node": ">=20"
+  },
+  "keywords": [],
+  "license": "MIT"
+}

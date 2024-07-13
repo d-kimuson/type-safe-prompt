@@ -137,12 +137,3 @@ dist
 # lefthook
 lefthook-local.yml
 .lefthook-local/**
-
-# extension
-.history
-
-# turborepo
-.turbo
-
-# env
-.env.secret

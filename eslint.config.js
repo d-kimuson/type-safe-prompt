@@ -27,12 +27,7 @@ const jsConfig = tsEslint.config(
       },
       "import/resolver": {
         typescript: {
-          project: [
-            "tsconfig.json",
-            "tsconfig.app.json",
-            "tsconfig.cli.json",
-            "tsconfig.test.json",
-          ],
+          project: ["tsconfig.json"],
           alwaysTryTypes: true,
         },
       },

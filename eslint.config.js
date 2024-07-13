@@ -7,6 +7,9 @@ import importPlugin from "eslint-plugin-import"
 import ununsedImports from "eslint-plugin-unused-imports"
 
 const jsConfig = tsEslint.config(
+  {
+    ignores: ["tsup.config.ts"],
+  },
   eslint.configs.recommended,
   {
     files: ["**/*.?(c|m)js?(x)", "**/*.?(c|m)ts?(x)"],

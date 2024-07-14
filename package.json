@@ -1,6 +1,6 @@
 {
   "name": "type-safe-prompt",
-  "description": "FIXME",
+  "description": "A lightweight library for handling prompts with embeddable variables in a type-safe manner",
   "private": true,
   "version": "0.0.1",
   "author": "d-kimuson",

@@ -4,8 +4,8 @@ export default defineConfig({
   entry: ["src/index.ts"],
   dts: true,
   sourcemap: "inline",
-  target: "esnext",
+  target: "es2022", // >= node18
   format: ["esm", "cjs"],
-  tsconfig: "tsconfig.json",
+  tsconfig: "tsconfig.app.json",
   external: [],
 })

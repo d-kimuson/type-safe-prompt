@@ -31,6 +31,12 @@ jobs:
       - name: lint
         run: pnpm lint
 
+      - name: typecheck
+        run: pnpm typecheck
+
+      - name: check if build successfully
+        run: pnpm build
+
   check_test:
     runs-on: ubuntu-latest
     timeout-minutes: 5

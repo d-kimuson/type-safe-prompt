@@ -1,7 +1,7 @@
 {
   "name": "type-safe-prompt",
   "description": "A lightweight library for handling prompts with embeddable variables in a type-safe manner",
-  "version": "0.0.1-next",
+  "version": "0.0.2",
   "author": "d-kimuson",
   "license": "MIT",
   "homepage": "https://github.com/d-kimuson/type-safe-prompt#readme",

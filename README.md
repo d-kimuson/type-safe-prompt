@@ -7,11 +7,11 @@ type-safe-prompt is a lightweight library for handling prompts with embeddable v
 The package is available on the npm registry. You can install it using your preferred package manager:
 
 ```bash
-npm install type-safe-prompt
+$ npm install type-safe-prompt
 # or
-yarn add type-safe-prompt
+$ yarn add type-safe-prompt
 # or
-pnpm add type-safe-prompt
+$ pnpm add type-safe-prompt
 ```
 
 ## Usage

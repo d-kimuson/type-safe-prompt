@@ -17,10 +17,7 @@
   "sideEffects": false,
   "packageManager": "pnpm@9.5.0",
   "engines": {
-    "npm": "forbidden, use pnpm",
-    "yarn": "forbidden, use pnpm",
-    "pnpm": ">=9.5.0",
-    "node": ">=20"
+    "node": ">=18"
   },
   "keywords": [
     "llm",

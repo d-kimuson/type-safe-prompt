@@ -26,6 +26,13 @@ pre-commit:
         - merge
         - rebase
 
+prepare-commit-msg:
+  parallel: true
+  scripts:
+    "commitizen.sh":
+      interactive: true
+      runner: sh
+
 pre-push:
   parallel: true
   commands:

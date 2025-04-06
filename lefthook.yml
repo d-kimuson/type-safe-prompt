@@ -5,7 +5,7 @@ pre-commit:
       glob: "*.{tsx,ts,mts,mcs,mjs,cjs,js,json,md,yml,yaml}"
       run: |
         pnpm run:prettier --write {staged_files}
-      staged_fixed: true
+      stage_fixed: true
       skip:
         - merge
         - rebase
@@ -19,7 +19,7 @@ pre-commit:
 
     backend-eslint:
       glob: "*.{ts,tsx,mts,mcs,js,jsx,mjs,cjs}"
-      staged_fixed: true
+      stage_fixed: true
       run: |
         pnpm exec eslint --no-error-on-unmatched-pattern --cache --fix {staged_files}
       skip:

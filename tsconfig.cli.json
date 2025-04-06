@@ -19,5 +19,5 @@
     "noEmit": true
   },
   "include": ["tsup.config.ts", "eslint.config.js"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "src"]
 }

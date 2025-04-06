@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unnecessary-type-parameters */
 export type ExtractPromptVariables<
   T extends string,
   Vars = never,

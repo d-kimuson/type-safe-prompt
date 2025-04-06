@@ -3,7 +3,6 @@ import eslint from "@eslint/js"
 import tsEslint from "typescript-eslint"
 // @ts-expect-error -- 型定義が提供されていない
 import importPlugin from "eslint-plugin-import"
-// @ts-expect-error -- 型定義が提供されていない
 import ununsedImports from "eslint-plugin-unused-imports"
 
 const jsConfig = tsEslint.config(

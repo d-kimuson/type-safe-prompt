@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.3
+
+### &nbsp;&nbsp;&nbsp;Bug Fixes
+
+- Bug that pnpm requried when install from npm &nbsp;-&nbsp; by **d-kimsuon** [<samp>(c89c3)</samp>](https://github.com/d-kimuson/type-safe-prompt/commit/c89c36c)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/d-kimuson/type-safe-prompt/compare/0.0.2...0.0.3)
+
 ## 0.0.2
 
 *No significant changes*

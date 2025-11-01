@@ -6,11 +6,16 @@ export type ExtractPromptVariables<
   ? ExtractPromptVariables<`${Before}${After}`, Vars | I>
   : Vars
 
+type DecorationVarKey<T extends string> = `\${${T}}`
+
 export type FilledPrompt<
   T extends string,
   Vars extends { [K: string]: string },
 > = T extends `${infer Before}{{${infer I}}}${infer After}`
-  ? FilledPrompt<`${Before}${Vars[I]}${After}`, Vars>
+  ? FilledPrompt<
+      `${Before}${string extends Vars[I] ? DecorationVarKey<I> : Vars[I]}${After}`,
+      Vars
+    >
   : T
 
 export const fillPrompt = <

@@ -6,6 +6,6 @@ export default defineConfig({
   sourcemap: "inline",
   target: "es2022", // >= node18
   format: ["esm", "cjs"],
-  tsconfig: "tsconfig.app.json",
+  tsconfig: "tsconfig.json",
   external: [],
 });

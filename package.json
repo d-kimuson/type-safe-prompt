@@ -2,25 +2,16 @@
   "name": "type-safe-prompt",
   "description": "A lightweight library for handling prompts with embeddable variables in a type-safe manner",
   "version": "0.0.3",
-  "author": "d-kimuson",
-  "bugs": "https://github.com/d-kimuson/type-safe-prompt/issues",
-  "devDependencies": {
-    "@actions/github": "6.0.1",
-    "@biomejs/biome": "^2.3.2",
-    "@octokit/rest": "22.0.1",
-    "@types/node": "^24.9.2",
-    "better-typescript-lib": "^2.12.0",
-    "lefthook": "2.0.2",
-    "npm-run-all2": "^8.0.4",
-    "release-it": "^19.0.5",
-    "release-it-pnpm": "^4.6.6",
-    "tsup": "^8.5.0",
-    "typescript": "^5.9.3",
-    "vitest": "^4.0.6"
-  },
   "engines": {
     "node": ">=18"
   },
+  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "package.json"
+  ],
   "exports": {
     ".": {
       "node": "./dist/index.cjs",
@@ -30,22 +21,6 @@
     },
     "./package.json": "./package.json"
   },
-  "files": [
-    "dist",
-    "package.json"
-  ],
-  "homepage": "https://github.com/d-kimuson/type-safe-prompt#readme",
-  "keywords": [
-    "llm",
-    "prompt",
-    "type-safe",
-    "typescript"
-  ],
-  "license": "MIT",
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.js",
-  "packageManager": "pnpm@10.20.0+sha512.cf9998222162dd85864d0a8102e7892e7ba4ceadebbf5a31f9c2fce48dfce317a9c53b9f6464d1ef9042cba2e02ae02a9f7c143a2b438cd93c91840f0192b9dd",
-  "repository": "d-kimuson/type-safe-prompt.git",
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch --clean=false",
@@ -60,6 +35,29 @@
     "test:watch": "vitest",
     "typecheck": "tsc -p ./tsconfig.json --noEmit"
   },
-  "sideEffects": false,
-  "type": "module"
+  "devDependencies": {
+    "@actions/github": "6.0.1",
+    "@biomejs/biome": "^2.3.2",
+    "@octokit/rest": "22.0.1",
+    "@types/node": "^24.9.2",
+    "better-typescript-lib": "^2.12.0",
+    "lefthook": "2.0.2",
+    "npm-run-all2": "^8.0.4",
+    "release-it": "^19.0.5",
+    "release-it-pnpm": "^4.6.6",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.6"
+  },
+  "author": "d-kimuson",
+  "repository": "d-kimuson/type-safe-prompt.git",
+  "homepage": "https://github.com/d-kimuson/type-safe-prompt#readme",
+  "keywords": [
+    "llm",
+    "prompt",
+    "type-safe",
+    "typescript"
+  ],
+  "bugs": "https://github.com/d-kimuson/type-safe-prompt/issues",
+  "license": "MIT"
 }

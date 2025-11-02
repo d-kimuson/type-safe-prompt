@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.4
+
+### &nbsp;&nbsp;&nbsp;Features
+
+- Better type for non-English prompt with `string` &nbsp;-&nbsp; by **zcf0508** [<samp>(7fc91)</samp>](https://github.com/d-kimuson/type-safe-prompt/commit/7fc913c)
+
+##### &nbsp;&nbsp;&nbsp;&nbsp;[View changes on GitHub](https://github.com/d-kimuson/type-safe-prompt/compare/0.0.3...0.0.4)
+
 ## 0.0.3
 
 ### &nbsp;&nbsp;&nbsp;Bug Fixes

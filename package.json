@@ -63,7 +63,7 @@
     "fix:biome-format": "biome format --write .",
     "fix:biome-lint": "biome check --write --unsafe .",
     "release": "release-it",
-    "test": "vitest --run --shard=${TEST_SHARED:-1/1}",
+    "test": "vitest --run",
     "test:watch": "vitest",
     "typecheck": "tsc -p ./tsconfig.json --noEmit"
   },

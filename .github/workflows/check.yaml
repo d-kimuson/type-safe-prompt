@@ -37,22 +37,5 @@ jobs:
       - name: check if build successfully
         run: pnpm build
 
-  check_test:
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-    strategy:
-      matrix:
-        shard: [1/2, 2/2]
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Setup Node
-        uses: ./.github/actions/setup_node
-
       - name: test
-        env:
-          TEST_SHARED: ${{ matrix.shard }}
         run: pnpm test

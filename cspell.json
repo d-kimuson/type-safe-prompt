@@ -26,7 +26,8 @@
     "tsup",
     "typecheck",
     "Uncapitalize",
-    "ununsed"
+    "ununsed",
+    "worktree"
   ],
   "ignorePaths": [
     "pnpm-lock.yaml",

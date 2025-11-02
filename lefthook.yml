@@ -11,13 +11,6 @@ pre-commit:
       run: pnpm exec biome format --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
       stage_fixed: true
 
-prepare-commit-msg:
-  parallel: true
-  scripts:
-    "commitizen.sh":
-      interactive: true
-      runner: sh
-
 pre-push:
   parallel: true
   commands:

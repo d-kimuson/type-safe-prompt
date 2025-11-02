@@ -5,7 +5,7 @@ export type ExtractPromptVariables<
   ? ExtractPromptVariables<`${Before}${After}`, Vars | I>
   : Vars;
 
-type DecorationVarKey<T extends string> = `\${${T}}`
+type DecorationVarKey<T extends string> = `\${${T}}`;
 
 export type FilledPrompt<
   T extends string,
@@ -15,7 +15,7 @@ export type FilledPrompt<
       `${Before}${string extends Vars[I] ? DecorationVarKey<I> : Vars[I]}${After}`,
       Vars
     >
-  : T
+  : T;
 
 export const fillPrompt = <
   const Template extends string,

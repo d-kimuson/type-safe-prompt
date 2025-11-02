@@ -108,40 +108,40 @@ describe("When a variable is used multiple times in a prompt", () => {
     type _It = Assert<
       "ReturnType should same as the string with the variable portion of the prompt replaced by the value",
       TypeEq<"\nyour name is Alice.\nplease call me Alice.\n", typeof actual>
-    >
-  })
-})
+    >;
+  });
+});
 
 const promptNonEnglish = `
 你的名字是 {{name}}.
-`
+`;
 
 describe("when prompted with non-English variable", () => {
   it("should be called with correct variable object with const string type", () => {
-    const name = "Alice"
+    const name = "Alice";
     const actual = fillPrompt(promptNonEnglish, {
       name,
-    })
+    });
 
-    expect(actual).toBe(`\n你的名字是 ${name}.\n`)
+    expect(actual).toBe(`\n你的名字是 ${name}.\n`);
     // @ts-expect-error -- for type test
     type _It = Assert<
       "return type should same as the string with the variable portion of the prompt replaced by the value",
       TypeEq<"\n你的名字是 Alice.\n", typeof actual>
-    >
-  })
+    >;
+  });
 
   it("should be called with correct variable object with string type", () => {
-    const name: string = "Alice"
+    const name: string = "Alice";
     const actual = fillPrompt(promptNonEnglish, {
       name,
-    })
+    });
 
-    expect(actual).toBe(`\n你的名字是 ${name}.\n`)
+    expect(actual).toBe(`\n你的名字是 ${name}.\n`);
     // @ts-expect-error -- for type test
     type _It = Assert<
       "return type should same as the string with the variable portion of the prompt replaced by the value",
       TypeEq<"\n你的名字是 ${name}.\n", typeof actual>
-    >
-  })
-})
+    >;
+  });
+});

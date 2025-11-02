@@ -18,6 +18,6 @@
     "checkJs": true,
     "noEmit": true
   },
-  "include": ["tsup.config.ts", "eslint.config.js"],
+  "include": ["tsup.config.ts"],
   "exclude": ["node_modules", "src"]
 }

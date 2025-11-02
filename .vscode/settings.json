@@ -11,9 +11,6 @@
   // typescript
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.preferences.importModuleSpecifier": "non-relative",
-  // eslint
-  "eslint.workingDirectories": ["."],
-  "eslint.validate": ["typescript"],
   // prettier
   "prettier.configPath": ".prettierrc.mjs",
   // autofix
@@ -21,10 +18,5 @@
   "[typescript][javascript][typescriptreact][javascriptreact][jsonc][json][markdown][mdx][yaml]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
-  // cspell
-  "cSpell.ignoreRegExpList": ["[０-９Ａ-Ｚａ-ｚぁ-んァ-ヶ亜-熙纊-黑]+"]
+  }
 }

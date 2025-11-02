@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unnecessary-type-parameters */
 export type ExtractPromptVariables<
   T extends string,
   Vars = never,
@@ -28,7 +27,6 @@ export const fillPrompt = <
   template: Template,
   vars: Vars
 ) => {
-  // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
   return Object.entries(vars).reduce(
     (template: string, [key, value]) =>
       template.replaceAll(`{{${key}}}`, String(value)),

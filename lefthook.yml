@@ -10,22 +10,6 @@ pre-commit:
         - merge
         - rebase
 
-    cspell:
-      glob: "*.{tsx,ts,mts,mcs,mjs,cjs,js,json,md,yml,yaml}"
-      run: pnpm cspell lint --no-must-find-files --gitignore --cache {staged_files}
-      skip:
-        - merge
-        - rebase
-
-    backend-eslint:
-      glob: "*.{ts,tsx,mts,mcs,js,jsx,mjs,cjs}"
-      stage_fixed: true
-      run: |
-        pnpm exec eslint --no-error-on-unmatched-pattern --cache --fix {staged_files}
-      skip:
-        - merge
-        - rebase
-
 prepare-commit-msg:
   parallel: true
   scripts:

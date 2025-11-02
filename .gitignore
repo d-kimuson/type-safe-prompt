@@ -51,9 +51,6 @@ web_modules/
 # Optional npm cache directory
 .npm
 
-# Optional eslint cache
-.eslintcache
-
 # Optional stylelint cache
 .stylelintcache
 
@@ -130,8 +127,6 @@ dist
 .pnp.*
 
 # linter
-.cspellcache
-.eslintcache
 .stylelintcache
 
 # lefthook

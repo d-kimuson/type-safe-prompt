@@ -3,7 +3,7 @@ export type ExtractPromptVariables<
   Vars = never,
 > = T extends `${infer Before}{{${infer I}}}${infer After}`
   ? ExtractPromptVariables<`${Before}${After}`, Vars | I>
-  : Vars
+  : Vars;
 
 type DecorationVarKey<T extends string> = `\${${T}}`
 
@@ -20,16 +20,16 @@ export type FilledPrompt<
 export const fillPrompt = <
   const Template extends string,
   const Vars extends {
-    [K in VariableNames]: string
+    [K in VariableNames]: string;
   },
   VariableNames extends string = ExtractPromptVariables<Template>,
 >(
   template: Template,
-  vars: Vars
+  vars: Vars,
 ) => {
   return Object.entries(vars).reduce(
     (template: string, [key, value]) =>
       template.replaceAll(`{{${key}}}`, String(value)),
-    template
-  ) as FilledPrompt<Template, Vars>
-}
+    template,
+  ) as FilledPrompt<Template, Vars>;
+};
